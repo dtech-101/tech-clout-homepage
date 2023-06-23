@@ -1,38 +1,394 @@
-.App {
+.App{overflow: hidden;}
+header{
+  background: url("https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  color: #ffff;
+  font-family: calibri(body);
+  padding: 30px;
+  height: 750px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav>:first-child{
+  position: relative;
+  left:2.5%;
+}
+.headerlink{
+  display: flex;
+  list-style: none;
+  margin: 10px;
+
+}
+.headerlink>a{
+  font-size: 15px;
+  margin: 20px;
+  text-decoration: none;
+  color: #ffff;
+}
+.headerNavBtn>button{
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 7px;
+  border: none;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  right: -3%;
+}
+.headerNavBtn>:first-child{
+  background: #78AB1D;
+  padding: 10px;
+}
+.headerNavBtn>:nth-child(2){
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background: none;
+  border: solid 1px white;
+} 
+.headerbody>h1{
+  font-size: 55px;
+  color: #3E94B6;
+  width: 50%;
+  position: relative;
+  left: 6%;
+  line-height: 1.1;
+  margin-top: 100px;
+}
+.headerbody>p{
+  font-size: 20px;
+  position: relative;
+  left: 6%;
+  font-weight: bold;
+}
+.headerbody>button{
+  font-size: 15px;
+  color: white;
+  padding: 11px;
+  background: none;
+  border: solid 1px white;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+.headerIcons>a{
+  color: black;
+  font-size: 12px;
+  background: white;
+  padding: 6px;
+  border-radius: 100%;
+  margin: 5px;
+  position: relative;
+  left: 7%;
+  top: 24px;
+}
+.whoWeAre{
+  display: flex;
+  margin-top: 100px;
+  margin-left:50px;
+  width: 100%;
+}
+.subWhoWeAre>:first-child{
+  font-size: 60px;
+  font-family: Arial;
+  color:#3E94B6;
+  width: 50%;
+}
+.subWhoWeAre>:nth-child(2){
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: lighter;
+  margin-right: 20px;
+}
+.whoWeAre>img{
+  border-radius: 20px;
+  margin-right: 40px;
+}
+.aboutus{
+  background: #F2F3F3;
+}
+.subAboutUs{
+  display: flex;
+  color:#3E94B6;
+  align-items:center;
+  margin-left: 100px;
+  margin-top: 160px;
+}
+.subAboutUs>:first-child{
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.subAboutUs>:nth-child(2){
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial;
+  margin-left: 40px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.vision{
+  display: flex;
+  margin-top: 100px;
+  margin-left:5%;
+  width: 100%;
+}
+.subVision>:first-child{
+  font-size: 60px;
+  font-family: Arial;
+  color:#3E94B6;
+  width: 50%;
+}
+.subVision>:nth-child(2){
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: lighter;
+  margin-right: 20px;
+}
+.vision>img{
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.mission{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 150px;
+  margin-left: -4%;
+  width: 100%;
+}
+.subMission>:first-child{
+  font-size: 60px;
+  font-family: Arial;
+  color:#3E94B6;
+}
+.subMission>:nth-child(2){
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: lighter;
+}
+.mission>img{
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.achivement{
+  background: #000;
+  display: flex;
+  padding: 100px;
+  align-items: center;
+  margin-top: 100px;
+}
+.subAchivement{
+  position: relative;
+  left: 10%;
+}
+.subAchivement>:first-child{
+  font-size: 45px;
+  font-family: calibri (body);
+  color:#62B2D2;
+  font-weight:bolder;
+  width: 100%;
+}
+.subAchivement>:nth-child(2){
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  line-height: 1.5;
+}
+.achivement>img{
+  border-radius: 20px;
+  position: relative;
+  left: 15%;
+  height: 320px;
+  width: 500px;
+}
+.figures{
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+}
+.figures>span{
+  color: white;
+  font-family: calibri(body);
+  font-weight: bolder;
+  list-style: none;
+}
+.subfigureOne{
+  display: flex;
+  font-size: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.subfigureOne>:first-child{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 50px;
+  padding: 30px;
+  align-content: center;
+  margin-right: 50px;
+  margin-bottom: 80px;
+  border: solid 1px #3E94B6;
+  border-radius: 50%;
+  background: #3E94B6;
+}
+.subSubfigrueOne>:first-child{
+  font-size: 50px;
+  font-family: calibri(body);
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.subSubfigrueOne>:nth-child(2){
+  font-size: 15px;
+  font-family: calibri(body);
+  font-weight: bold;
+  position: relative;
+  top: -50px;
+}
+
+.subfigureTwo{
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+}
+.subfigureTwo>:first-child{
+  display: flex;
+  font-size: 50px;
+  padding: 30px;
+  align-content: center;
+  margin-right: 50px;
+  margin-bottom: 80px;
+  border: solid 1px #3E94B6;
+  border-radius: 50%;
+  background: #3E94B6;
+}
+.subSubfigureTwo>:first-child{
+  font-size: 50px;
+  font-family: calibri(body);
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.subSubfigureTwo>:nth-child(2){
+  font-size: 15px;
+  font-family: calibri(body);
+  font-weight: bold;
+  position: relative;
+  top: -50px;
+}
+
+.subfigureThree{
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+}
+.subfigureThree>:first-child{
+  display: flex;
+  font-size: 50px;
+  padding: 30px;
+  align-content: center;
+  margin-right: 50px;
+  margin-bottom: 80px;
+  border: solid 1px #3E94B6;
+  border-radius: 50%;
+  background: #3E94B6;
+}
+.subSubfigureThree>:first-child{
+  font-size: 50px;
+  font-family: calibri(body);
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.subSubfigureThree>:nth-child(2){
+  font-size: 15px;
+  font-family: calibri(body);
+  font-weight: bold;
+  position: relative;
+  top: -50px;
+}
+
+.whyTechClout{
+  margin-top: 70px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  display: flex;
+  color: #0D4F68;
+  font-size: 40px;
+}
+.whyTechClout>:first-child{
+  position: relative;
+  left: 5%;
+  top: -20px;
+}
+
+.partners{
+  background: #AFACAC;
+}
+.partners>:first-child{
+  font-size: 50px;
   color: white;
+  position: relative;
+  left: 5%;
+  top: 80px;
+}
+.subPartner{
+  display: flex;
+  justify-content: space-evenly;
+}
+.subPartner>img{
+    width: 190px;
+    margin: -20px;
+}
+.subPartner>:first-child{
+  position: relative;
+  left: 12%;
+  top: 100px;
+  height: 200px;
+}
+.subPartner>:nth-child(2){
+  position:relative;
+  left: 10%;
+  top: 100px;
+  height: 200px;
+}
+.subPartner>:nth-child(3)
+{
+  position: relative;
+  width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.stayingUpdated{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stayingUpdated>:first-child{
+  width: 150px;
+}
+.stayingUpdated>form>input{
+  font-size: 20px;
+  padding: 15px;
+  width: 400px;
+  border: solid 1px;
+  outline: none;
+  margin-top: 50px;
+}
+.stayingUpdated>form>button{
+  font-size: 20px;
+  background-color: #78AB1D;
+  border-radius: 40px;
+  padding: 15px;
+  width: 150px;
+  margin: 10px;
+  border: none;
+  color: white;
 }
