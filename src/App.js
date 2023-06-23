@@ -1,10 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 import { BsLinkedin,BsTwitter,BsInstagram,BsFacebook,BsYoutube} from 'react-icons/bs';
 import {BiSolidContact} from 'react-icons/bi';
 import {RiMailOpenLine} from 'react-icons/ri';
 import {FaPeopleArrows} from 'react-icons/fa';
 function App() {
+    const [countOne,setCountOne] = useState(0);
+    const funCountOne =()=>{
+      if(countOne < 22){
+        setCountOne(countOne+1)
+       
+      }
+        else{return 1;}
+    }
+    setTimeout(funCountOne,40)
+
+    const [countTwo,setCountTwo] = useState(0);
+    const funCountTwo =()=>{
+      if(countTwo < 10){
+        setCountTwo(countTwo+1)
+       
+      }
+        else{return 1;}
+    }
+    setTimeout(funCountTwo,60)
+
+    const [countThree,setCountThree] = useState(0);
+    const funCountThree =()=>{
+      if(countThree < 50){
+        setCountThree(countThree+1)
+       
+      }
+        else{return 1;}
+    }
+    setTimeout(funCountThree,20)
+
   return (
     <div className="App">
         <header>
@@ -75,21 +106,21 @@ function App() {
               <span className='subfigureOne'>
               <p><BiSolidContact/></p>
               <span className='subSubfigrueOne'>
-                <p>22K+</p>
+                <p id="followers">{countOne}K+</p>
                 <p>Active Followers</p>
               </span>
               </span>
               <span className='subfigureTwo'>
                 <p><RiMailOpenLine/></p>
                 <span className='subSubfigureTwo'>
-                  <p>10K+</p>
+                  <p id="subscribers">{countTwo}K+</p>
                   <p>Subscribers</p>
                 </span>
               </span>
               <span className='subfigureThree'>
                 <p><FaPeopleArrows/></p>
                 <span className='subSubfigureThree'>
-                  <p>50K+</p>
+                  <p id="partners">{countThree}K+</p>
                   <p>Partners</p>
                 </span>
               </span>
